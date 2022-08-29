@@ -58,7 +58,6 @@ class MainActivity : AppCompatActivity() {
 
             } catch (e: Exception) {
                 Toast.makeText(this, e.message, Toast.LENGTH_SHORT).show()
-
                 Log.d("EXCEPTION", "Message: ${e.message}")
             }
 
@@ -74,7 +73,7 @@ class MainActivity : AppCompatActivity() {
         if (isClear) {
             mainBinding.calculation.text = ""
             mainBinding.result.text = ""
-//
+            mainBinding.textView.visibility=View.GONE
         } else {
             mainBinding.calculation.append(string)
         }
