@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         mainBinding.seven.setOnClickListener { input("7", false) }
         mainBinding.eight.setOnClickListener { input("8", false) }
         mainBinding.nine.setOnClickListener { input("9", false) }
+        mainBinding.dot.setOnClickListener { input(".",false)  }
         mainBinding.backspace.setOnClickListener {
             val expression = mainBinding.calculation.text.toString()
             if (expression.isNotEmpty()) {
